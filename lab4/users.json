@@ -1,12 +1,5 @@
 {
   "users": [
-    {
-      "userId": 2566,
-      "userName": { "firstName": "Alvinho", "lastName": "Tedeschi" }
-    },
-    {
-      "userId": 7167,
-      "userName": { "firstName": "Alvo", "lastName": "Tedeschi" }
-    }
+    { "userId": 1304, "userName": { "firstName": "Mila", "lastName": "Kunis" } }
   ]
 }
