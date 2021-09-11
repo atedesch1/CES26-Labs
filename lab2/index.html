@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lab 2 - CES26</title>
+    <link rel="stylesheet" href="lib/style.css" />
+    <script src="lib/script.js" defer></script>
+  </head>
+  <body class="body-container">
+    <div id="annimation-container" class="annimation-container">
+      <img
+        id="cat-image"
+        class="cat-image"
+        src="https://lh3.googleusercontent.com/fife/AAWUweUUmnFNM1pfcpHVL722_A46vTMLpp3nAy-a_WqkulVjtdXVgp2pVeeNUBmVd7EX9WE7povsq1wK2mbKS4pg419Kd7yVUz2jSZXOJop_DDs5_NsFcr5LCSCoT6TRsMwaQLdN7fEW7rK5aR7W7AD4zD4RXBPDXCfrFDzflO6IzShFpCOGeDI7QiIG15_EY5W085WAKmsvqydLeT0drrf3nmO0ylZXIj6mVRsdbBQ46TT1SirxJB3sAmAFa8-tjZEy9O0S2A_E8EJLBHrtVB4ByWki7-lKY-_edKBGvfTg_DVt48DS3_2n-r9fGuDFnepb6-n6g-ut5WnL6gm49d80rSgrOazHppIpjCtt7DhsfvqYz2FiLyMvpC6X_TO6LWaG0z-cBXSj8gNDp3_fd7rQTN1cdsf42Z86K0p_pW0bNDZx_2LPL7ScWCKtTPDzjWA9lRIteC4AfuAUkEZBNMlzg5asto0FA40LZ6dnfagbaW19FB3zcSedUIWdHLzjt0zXJeQEOzM0OlHxVgIzPPYvefxTlMTSypebPlkABjzDIvR7pWsQfIregFaQJx_MTnbXmd_gUmRkITAqFVDA_4QLgHh38DAkKDYFytCGNJyUWRnMlcOZiiYZ3enK1FWvUxdrbkRalXZR_i1SVng-2BjzoQ-8JxSAg3jxKC1PNEc94UDFuV079n_BafoyQZSYPqMSMtUTQckG1rxHhYLACzst8JBA96vWiXRPQyE=w967-h1318-ft"
+        alt=""
+        hidden
+      />
+      <img
+        id="mouse-image"
+        class="mouse-image"
+        src="https://lh3.googleusercontent.com/fife/AAWUweVVEE5U6xffMCyW06YcMIRk99vwLwy30B74wfnLdG8rIVqY7Y5-Nhp4UpkSgXgXYsyPnW8aZGLg2DYi41SRgTIz6jcr-4H_n8QdoCKGYJ8L64NxABYFzp68gfJBL4KNSo-F4s0Mj3aF-TB3OANfTJ5tDLjWXsFRijYyLgQeeawTnDDnMfFGbDEsTF8S9bnuSBSGNdvGJoWOo5xQ3o0wspye-9wxUnEGuR2s6nOydYv2OVS5-Iwe1ko72zEk0L1Os2zOMa0vW2WPoL-5Yvb_ExRMD1t5aSq1Be7gJ8VzOfKEj10oa15lj_GtbESDhaYQvrLH9v-kgLCAGaLFTeK6Gv1TZrg4t1I7SDS0mvvmZNSQisLSMVNPi5xMlB3zZNSpZol-XnwN_J9Ij5vTVEXeA8E3wNj66J-4KJxK-FQS-wN9IXbh2V88huyR97vKQPT0_BJd-jnSIaNnhZPt_7n_X1jb2FjBBFJNCkEum98Cv0CnfsSIvP-IozURRGWW_129EpLThd-HyluS0XpVwnTWzoS_QnQYItu66I_synHDVgU92rgLiKtG8zrkFjxGzK32Gy5iyW-CrgyeOZVwQgywGgw-yjiHpvc825VdqMddEqMNHowNyfXaTZwrVY_bBCdFfQn5_HxWc0I3uIRb-RB9jyaGxM6GlSbyM7jHAXcP3LQYnLpxwvn0r_pOqgNWXEjPOsEprXAm77zvcRNoqbtFqw-d3Q22K7rS-lw=w967-h1318-ft"
+        alt=""
+        hidden
+      />
+      <audio
+        preload="none"
+        id="munch-sound"
+        src="http://freesoundeffect.net/sites/default/files/human-bite-crunch-rye-crispbread-2-sound-effect-35330201.mp3"
+        hidden
+      ></audio>
+
+      <audio
+        preload="none"
+        id="theme-song"
+        src="https://www.chosic.com/wp-content/uploads/2021/02/Fluffing-a-Duck.mp3"
+        hidden
+      ></audio>
+      <div id="top-container" class="top-container">
+        <div id="title" class="title">Lab2 - Alvaro Tedeschi Neto - COMP23</div>
+        <div class="buttons">
+          <button class="button" onclick="toggleMute()">Toggle Mute</button>
+          <button class="button" onclick="toggleThemeSong()">Play Theme</button>
+        </div>
+      </div>
+      <canvas
+        id="annimation-canvas"
+        style="border-style: solid; border-color: black"
+      ></canvas>
+    </div>
+  </body>
+</html>

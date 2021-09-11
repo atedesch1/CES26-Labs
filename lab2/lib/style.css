@@ -1,0 +1,71 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --primary-color: #282a36;
+  --secondary-color: #383a59;
+  --accent-pink: #ff79c6;
+  --accent-green: #50fa7b;
+  --accent-purple: #bd93f9;
+  --text-color: #ffffff;
+}
+
+.top-container {
+  height: 15%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 2vmax;
+  font-weight: bold;
+  color: var(--accent-green);
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.button {
+  background-color: var(--accent-green);
+  height: 30px;
+  width: 120px;
+  border-radius: 20px;
+  font-size: 16px;
+  font-weight: bold;
+  display: flex;
+  border: none;
+  color: var(--primary-color);
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.body-container {
+  background-color: var(--primary-color);
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.annimation-container {
+  background-color: var(--secondary-color);
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  padding: 50px;
+  box-sizing: border-box;
+}

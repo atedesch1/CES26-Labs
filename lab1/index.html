@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="eng">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lab 1 - CES26</title>
+    <link rel="stylesheet" href="lib/style.css" />
+    <script src="lib/script.js"></script>
+  </head>
+
+  <body>
+    <div class="outer-container">
+      <div class="inner-container">
+        <div class="title">Lab1 - Alvaro Tedeschi Neto - COMP23</div>
+        <div class="tasks">
+          <div class="task-container">
+            <div class="task-title-container">
+              <p class="task-title">Add/Remove Elements</p>
+            </div>
+            <div class="task-display" id="firstTaskDisplay">
+              <p class="task-description">
+                Use buttons below to add or remove text elements in this box.
+              </p>
+            </div>
+            <div class="task-buttons">
+              <button class="task-button" onclick="addElement()">Add</button>
+              <button class="task-button" onclick="removeElement()">
+                Remove
+              </button>
+            </div>
+          </div>
+          <div class="task-container">
+            <div class="task-title-container">
+              <p class="task-title">Change Atributes</p>
+            </div>
+            <div class="task-display">
+              <p class="task-description">
+                Press Enter to enter DOM element selection mode. Use the Arrow
+                keys to navigate DOM. Use the Spacebar or button below to paint
+                selected element.
+              </p>
+            </div>
+            <div class="task-buttons">
+              <button class="task-button" onclick="changeNodeColor()">
+                Paint
+              </button>
+            </div>
+          </div>
+          <div class="task-container">
+            <div class="task-title-container">
+              <p class="task-title">Event Handling</p>
+            </div>
+            <div class="task-display">
+              <p class="task-description hover">
+                Hover over this text to change its color to white. Use the
+                buttons below to toggle paint text element on hover or make
+                elements fall on click.
+              </p>
+            </div>
+            <div class="task-buttons">
+              <button class="task-button" onclick="togglePaintOnHover()">
+                Toggle Paint
+              </button>
+              <button class="task-button" onclick="toggleFallOnClick()">
+                Toggle Fall
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

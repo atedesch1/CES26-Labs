@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="lib/style.css" />
+    <script src="lib/script.js" defer></script>
+    <title>Lab 4 - CES26</title>
+  </head>
+  <body class="body-container">
+    <div class="inner-container">
+      <div class="top-container">
+        <div class="title">Lab4 - Alvaro Tedeschi Neto - COMP23</div>
+      </div>
+      <div class="tasks-container">
+        <div class="task-container">
+          <div class="task-title-container">
+            <p class="task-title">Upload Files</p>
+          </div>
+          <form
+            class="task-form"
+            action="/uploadFile"
+            method="post"
+            enctype="multipart/form-data"
+          >
+            <input type="file" name="file" /> <br />
+            <input type="submit" value="Upload" />
+          </form>
+        </div>
+        <div class="task-container">
+          <div class="task-title-container">
+            <p class="task-title">Register User</p>
+          </div>
+          <form
+            class="task-form"
+            action="/processForm"
+            method="get"
+            enctype="multipart/form-data"
+          >
+            <input type="text" name="firstName" placeholder="First Name" />
+            <br />
+            <input type="text" name="lastName" placeholder="Last Name" /> <br />
+            <input type="submit" value="Submit" />
+          </form>
+        </div>
+        <div class="task-container">
+          <div class="task-title-container">
+            <p class="task-title">Print JSON</p>
+          </div>
+          <div class="task-display">
+            <p id="display"></p>
+          </div>
+          <button class="task-button" id="button">Show JSON</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

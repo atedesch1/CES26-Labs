@@ -1,0 +1,145 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --primary-color: #282a36;
+  --secondary-color: #383a59;
+  --accent-pink: #ff79c6;
+  --accent-green: #50fa7b;
+  --accent-purple: #bd93f9;
+  --text-color: #ffffff;
+}
+
+.body-container {
+  background-color: var(--primary-color);
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.top-container {
+  height: 15%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 2vmax;
+  font-weight: bold;
+  color: var(--accent-green);
+}
+
+.inner-container {
+  box-sizing: border-box;
+  background-color: var(--secondary-color);
+  height: 100%;
+  width: 100%;
+  border-radius: 20px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+}
+
+.tasks-container {
+  overflow-y: auto;
+  height: 85%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.task-title-container {
+  width: 100%;
+  height: 58px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.task-title {
+  margin: 0;
+  color: var(--text-color);
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.task-display {
+  color: var(--accent-pink);
+  height: 70%;
+  width: 100%;
+  overflow-y: auto;
+}
+
+.focus {
+  box-shadow: inset 0 0 1em var(--accent-pink);
+}
+
+.task-form {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.task-container {
+  max-width: 40%;
+  min-height: 300px;
+  min-width: 200px;
+  max-height: 80%;
+  margin: 10px;
+  background-color: var(--primary-color);
+  border-radius: 20px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
+  align-items: center;
+}
+
+.task-display {
+  color: var(--accent-pink);
+  flex: 1;
+  height: 70%;
+  width: 100%;
+  overflow-y: auto;
+}
+
+.task-button {
+  background-color: var(--accent-green);
+  height: 30px;
+  padding: 15px;
+  min-width: 120px;
+  border-radius: 20px;
+  font-size: 16px;
+  font-weight: bold;
+  display: flex;
+  border: none;
+  color: var(--primary-color);
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.input {
+  border-style: none;
+  min-height: 30px;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 40px;
+}
