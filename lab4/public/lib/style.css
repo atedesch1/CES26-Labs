@@ -90,6 +90,12 @@ body {
   box-shadow: inset 0 0 1em var(--accent-pink);
 }
 
+.form {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
 .task-form {
   display: flex;
   flex: 1;
@@ -118,6 +124,11 @@ body {
   height: 70%;
   width: 100%;
   overflow-y: auto;
+}
+
+.task-buttons {
+  display: flex;
+  justify-content: center;
 }
 
 .task-button {

@@ -20,13 +20,17 @@
             <p class="task-title">Upload Files</p>
           </div>
           <form
-            class="task-form"
+            class="form"
             action="/uploadFile"
             method="post"
             enctype="multipart/form-data"
           >
-            <input type="file" name="file" /> <br />
-            <input type="submit" value="Upload" />
+            <div class="task-form">
+              <input class="input" type="file" name="file" />
+            </div>
+            <div class="task-buttons">
+              <button type="submit" class="task-button">Upload</button>
+            </div>
           </form>
         </div>
         <div class="task-container">
@@ -34,15 +38,30 @@
             <p class="task-title">Register User</p>
           </div>
           <form
-            class="task-form"
+            class="form"
             action="/processForm"
             method="get"
             enctype="multipart/form-data"
           >
-            <input type="text" name="firstName" placeholder="First Name" />
-            <br />
-            <input type="text" name="lastName" placeholder="Last Name" /> <br />
-            <input type="submit" value="Submit" />
+            <div class="task-form">
+              <input
+                class="input"
+                type="text"
+                name="firstName"
+                placeholder="First Name"
+              />
+
+              <input
+                class="input"
+                type="text"
+                name="lastName"
+                placeholder="Last Name"
+              />
+            </div>
+
+            <div class="task-buttons">
+              <button type="submit" class="task-button">Submit</button>
+            </div>
           </form>
         </div>
         <div class="task-container">

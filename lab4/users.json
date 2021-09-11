@@ -1,1 +1,12 @@
-{"users":[{"userId":2566,"userName":{"firstName":"Alvinho","lastName":"Tedeschi"}},{"userId":7167,"userName":{"firstName":"Alvo","lastName":"Tedeschi"}},{"userId":3052,"userName":{"firstName":"Alvo","lastName":"Tedeschi"}}]}
+{
+  "users": [
+    {
+      "userId": 2566,
+      "userName": { "firstName": "Alvinho", "lastName": "Tedeschi" }
+    },
+    {
+      "userId": 7167,
+      "userName": { "firstName": "Alvo", "lastName": "Tedeschi" }
+    }
+  ]
+}
