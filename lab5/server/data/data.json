@@ -1,3 +1,12 @@
 {
-  "users": []
+  "users": [
+    {
+      "id": "1d373283-1274-4eda-9c8d-99440b2c84ef",
+      "data": {
+        "name": "Mila Kunis",
+        "address": "Los Angeles, California, USA",
+        "birthDate": "1983-08-14"
+      }
+    }
+  ]
 }
