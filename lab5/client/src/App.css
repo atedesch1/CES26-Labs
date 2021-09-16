@@ -1,0 +1,29 @@
+.App {
+  text-align: center;
+}
+
+.information {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.information * {
+  margin: 0.5em;
+}
+
+.information input {
+  width: 50%;
+  font-size: 1.125rem;
+  padding-left: 0.5rem;
+}
+
+.information button {
+  padding: 1em;
+}
+
+.information table th,
+td {
+  border: 1px solid #ddd;
+  padding: 0.5em;
+}
