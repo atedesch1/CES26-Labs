@@ -12,6 +12,8 @@ You must run the following commands in /server and /client directories respectiv
 
     npm run serverStart
 
+<br/>
+
     npm start
 
 ## Screenshots
