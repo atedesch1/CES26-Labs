@@ -1,51 +1,42 @@
 import React from 'react'
-import { useState } from 'react'
-import { connect } from 'react-redux'
+import { connect, useDispatch } from 'react-redux'
+import * as actions from './CalculatorActions'
 import './Calculator.css'
 
-const Calculator = () => {
-  const [display, setDisplay] = useState('0')
+const Calculator = ({ expression }) => {
+  const dispatch = useDispatch()
 
   const handleClick = (e) => {
-    if (display === '0' || display === 'Error') {
-      setDisplay(e.target.name)
-    } else {
-      setDisplay(display.concat(e.target.name))
-    }
+    dispatch(actions.addSymbol(e.target.name))
   }
 
   const clear = () => {
-    setDisplay('0')
+    dispatch(actions.clearDisplay())
   }
 
   const backspace = () => {
-    if (display.length === 1 || display === 'Error') {
-      clear()
-    } else {
-      setDisplay(display.slice(0, -1))
-    }
+    dispatch(actions.removeSymbol())
   }
 
   const calculate = () => {
-    try {
-      // eslint-disable-next-line no-eval
-      setDisplay(eval(display).toString())
-    } catch (_) {
-      setDisplay('Error')
-    }
+    dispatch(actions.calculate())
   }
 
   return (
     <div className="container">
-      <div className="display">{display}</div>
+      <div className="display">{expression}</div>
       <div className="buttons">
         <div className="row">
-          <button onClick={clear}>Clear</button>
-          <button onClick={backspace}>C</button>
-          <button name="%" onClick={handleClick}>
+          <button className="accent-pink" onClick={clear}>
+            Clear
+          </button>
+          <button className="accent-pink" onClick={backspace}>
+            C
+          </button>
+          <button name="%" className="accent-pink" onClick={handleClick}>
             %
           </button>
-          <button name="/" onClick={handleClick}>
+          <button name="/" className="accent-pink" onClick={handleClick}>
             /
           </button>
         </div>
@@ -59,7 +50,7 @@ const Calculator = () => {
           <button name="9" onClick={handleClick}>
             9
           </button>
-          <button name="*" onClick={handleClick}>
+          <button name="*" className="accent-pink" onClick={handleClick}>
             *
           </button>
         </div>
@@ -73,7 +64,7 @@ const Calculator = () => {
           <button name="6" onClick={handleClick}>
             6
           </button>
-          <button name="-" onClick={handleClick}>
+          <button name="-" className="accent-pink" onClick={handleClick}>
             -
           </button>
         </div>
@@ -87,7 +78,7 @@ const Calculator = () => {
           <button name="3" onClick={handleClick}>
             3
           </button>
-          <button name="+" onClick={handleClick}>
+          <button name="+" className="accent-pink" onClick={handleClick}>
             +
           </button>
         </div>
@@ -98,11 +89,19 @@ const Calculator = () => {
           <button name="." onClick={handleClick}>
             .
           </button>
-          <button onClick={calculate}>=</button>
+          <button className="accent-green" onClick={calculate}>
+            =
+          </button>
         </div>
       </div>
     </div>
   )
 }
 
-export default Calculator
+const mapStateToProps = (state) => {
+  return {
+    expression: state.expression,
+  }
+}
+
+export default connect(mapStateToProps)(Calculator)
