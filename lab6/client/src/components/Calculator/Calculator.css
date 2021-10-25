@@ -1,0 +1,26 @@
+.container {
+}
+
+.display {
+  padding: 15px;
+  text-align: right;
+  font-size: 1.3em;
+}
+
+.buttons {
+}
+
+.row {
+  display: flex;
+}
+
+.row button {
+  margin: 2px;
+  width: 100px;
+  height: 60px;
+  font-size: 1em;
+}
+
+.grow {
+  flex-grow: 1;
+}
