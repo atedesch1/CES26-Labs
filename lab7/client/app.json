@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "client",
+    "name": "calculator",
     "slug": "calculator",
     "owner": "atedeschi",
     "version": "1.0.0",
@@ -14,7 +14,9 @@
     "updates": {
       "fallbackToCacheTimeout": 0
     },
-    "assetBundlePatterns": ["**/*"],
+    "assetBundlePatterns": [
+      "**/*"
+    ],
     "ios": {
       "supportsTablet": true
     },
@@ -26,6 +28,8 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "description": "",
+    "githubUrl": "https://github.com/atedesch1/CES26-Labs/tree/main/lab7"
   }
 }
